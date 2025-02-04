@@ -1,11 +1,11 @@
 import streamlit as st
 import pickle
-from tensorflow.keras.models import load_model # type: ignore
+from tensorflow import keras
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder, StandardScaler
 import pandas as pd
 import numpy as np
 
-model = load_model('model.h5')
+model = .keras.models.load_model('model.h5')
 
 with open('onehot_encoder_geo.pkl','rb') as file:
     onehot_encoder_geo = pickle.load(file)
