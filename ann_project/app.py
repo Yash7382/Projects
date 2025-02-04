@@ -1,6 +1,5 @@
 import streamlit as st
 import pickle
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 from sklearn.preprocessing import OneHotEncoder, LabelEncoder, StandardScaler
 import pandas as pd
